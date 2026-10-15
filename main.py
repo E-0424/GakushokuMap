@@ -1,9 +1,11 @@
 from maps.GakushokuSample import GakushokuSample
 from maps.shinzatoosusume import ShinzatoOsusume
+from maps.OzawaGakushoku import OzawaGakushoku  
+from maps.EitoGakusyoku import EitoGakusyoku
+
 # ↓のリストには、メンバーの各オススメ学食が格納されます。
-data = [GakushokuSample(),
-        ShinzatoOsusume(),
-        ]
+data = [EitoGakusyoku(),OzawaGakushoku(),ShinzatoOsusume()]
+
 for rank, d in enumerate(data, start=1):
     print(f"{rank}位: {d.get_menu()}")
     print("---------------------------------")
